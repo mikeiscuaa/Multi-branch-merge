@@ -1,15 +1,146 @@
+/* estilos.css - Versión Mejorada */
+
+/* Estilos generales */
 body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
 }
 
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1 {
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #ff6b6b;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Párrafos */
 p {
-    color: darkblue;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid transparent;
 }
 
+p:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para mensajes */
+p:nth-child(odd) {
+    border-left-color: #4ecdc4;
+    background-color: #f7fafc;
+}
+
+p:nth-child(even) {
+    border-left-color: #ff9e7d;
+}
+
+/* Mensaje especial de Allison */
+p:contains("holi de allison") {
+    background-color: #fff0f6;
+    border-left-color: #ff85c0;
+    font-style: italic;
+    color: #eb2f96;
+}
+
+/* Mensaje sobre el Ing. Alito */
+p:contains("Ing.Alito") {
+    background-color: #f0f5ff;
+    border-left-color: #597ef7;
+    font-weight: bold;
+    color: #1d39c4;
+    text-shadow: 0 0 1px rgba(29, 57, 196, 0.2);
+}
+
+/* Botón */
 button {
-    background-color: lightgreen;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    margin: 1.5rem 0;
     cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(255, 117, 140, 0.6);
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+}
+
+/* Imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 2rem auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border: 5px solid white;
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+/* Efecto especial para el mensaje de protesta */
+.protest-message {
+    animation: pulse 2s infinite;
+    text-align: center;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
 }
