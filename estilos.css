@@ -84,6 +84,14 @@ p:contains("Ing.Alito") {
     text-shadow: 0 0 1px rgba(29, 57, 196, 0.2);
 }
 
+/*Mensaje de Moguito */
+p:contains("Me gusta la maruchan") {
+    background-color: blueviolet;
+    border-left-color: #1d39c4 ;
+    font-style: 'Comic Sans MS', Cursive;
+    color: white;
+}
+
 /* Botón */
 button {
     background: linear-gradient(to right, #ff758c, #ff7eb3);
@@ -105,7 +113,7 @@ button {
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 7px 20px rgba(255, 117, 140, 0.6);
+    box-shadow: 0 7px 20px rgba(122, 202, 31, 0.6);
     background: linear-gradient(to right, #ff7eb3, #ff758c);
 }
 
@@ -116,7 +124,7 @@ img {
     border-radius: 12px;
     display: block;
     margin: 2rem auto;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(223, 15, 15, 0.15);
     border: 5px solid white;
     transition: transform 0.4s ease;
 }
@@ -151,6 +159,30 @@ img:hover {
     margin-top: 3rem; 
     padding: 1.5rem;
     background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
-    color: rgb(196, 25, 25);
+    color: rgb(17, 66, 156);
     border-radius: 10px;
+}
+
+/*Fondo*/
+body{
+    width: 100%;
+  height: 100%;
+  --s: 200px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
 }
