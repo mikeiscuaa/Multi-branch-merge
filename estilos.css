@@ -144,3 +144,13 @@ img:hover {
     50% { transform: scale(1.03); }
     100% { transform: scale(1); }
 }
+
+/*Mensaje especial*/
+.final-message {
+    text-align: center;
+    margin-top: 3rem; 
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+    color: rgb(196, 25, 25);
+    border-radius: 10px;
+}
