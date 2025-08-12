@@ -186,3 +186,18 @@ body{
     );
   background-size: var(--s) calc(var(--s) * 0.577);
 }
+/* Efecto de nieve cayendo */
+@keyframes snow {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: snow linear infinite;
+    pointer-events: none;
+}
