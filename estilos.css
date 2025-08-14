@@ -85,7 +85,7 @@ p:contains("Ing.Alito") {
 }
 
 /*Mensaje de Moguito */
-p:contains("Me gusta la maruchan") {
+p:contains("Me gusta la maruchan con pollo") {
     background-color: blueviolet;
     border-left-color: #1d39c4 ;
     font-style: 'Comic Sans MS', Cursive;
@@ -95,7 +95,7 @@ p:contains("Me gusta la maruchan") {
 /* Botón */
 button {
     background: linear-gradient(to right, #ff758c, #ff7eb3);
-    color: white;
+    color: green;
     border: none;
     padding: 12px 25px;
     font-size: 1rem;
@@ -159,7 +159,7 @@ img:hover {
     margin-top: 3rem; 
     padding: 1.5rem;
     background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
-    color: rgb(17, 66, 156);
+    color: rgb(175, 197, 236);
     border-radius: 10px;
 }
 
@@ -195,7 +195,7 @@ body{
 .snowflake {
     position: fixed;
     top: -10px;
-    background: white;
+    background: red;
     border-radius: 50%;
     opacity: 0.8;
     animation: snow linear infinite;
